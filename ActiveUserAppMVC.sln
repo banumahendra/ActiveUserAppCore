@@ -11,6 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveUserAppDAL", "ActiveU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveUserAppBAL", "ActiveUserAppBACore\ActiveUserAppBAL.csproj", "{101DBE81-62E5-4673-ADE9-4F8C67B2C841}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB Sql Scripts", "DB Sql Scripts", "{5CB5478D-580A-4EC0-9A6D-DBCE9D9F2EA6}"
+	ProjectSection(SolutionItems) = preProject
+		ActiveUserAppSQLScript.sql = ActiveUserAppSQLScript.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
