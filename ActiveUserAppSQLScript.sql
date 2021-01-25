@@ -35,3 +35,10 @@ CREATE TABLE [dbo].[User] (
 );
 END
 
+GO
+
+/* Sample User Table Data */
+
+--Insert into [User] values('mory', 'mory@abc.com','8234293847','True')
+--Insert into [User] values('Jhon', 'jhon@abc.com','3234934343','False')
+--Insert into [User] values('lisy', 'lisy@abc.com','3242342342','True')
