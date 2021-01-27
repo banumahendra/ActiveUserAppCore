@@ -14,6 +14,8 @@ using ActiveUserAppBACore.Manager;
 using ActiveUserAppBACore.Contractor;
 using ActiveUserAPPCoreDAO_T.Manager;
 using ActiveUserAPPCoreDAO_T.Contractor;
+using Microsoft.Extensions.Logging;
+using System.IO;
 
 namespace ActiveUserAppCORE
 {
@@ -37,8 +39,11 @@ namespace ActiveUserAppCORE
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            var path = Directory.GetCurrentDirectory();
+            loggerFactory.AddFile($"{path}\\Logs\\Log.txt");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
